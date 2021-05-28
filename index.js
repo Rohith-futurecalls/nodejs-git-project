@@ -16,7 +16,7 @@ http
                   "Content-Type": "text/html",
 
               });
-		    console.log("404 page has been visited
+		    console.log("404 page has been visited");
               response.write("<p>404 Page Not found!</p>");
               response.end();
               break;
