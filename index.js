@@ -17,6 +17,7 @@ http
                   "Content-Type": "text/html",
 
               });
+              console.log("API");
               response.write("<h2>About Page!</h2>");
               response.end();
               break;
