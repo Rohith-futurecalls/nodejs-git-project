@@ -21,13 +21,25 @@ http
               response.end();
               break;
 
+
             case "api/test":
-                console/log("rest api called");                response.writeHead(200,{
+                console/log("rest api called");              
+                  response.writeHead(200,{
                  "Content-Type": "application/json",
                 });
                 response.write(JSON.stringify({ foo: "bar"}));
                 response.end();
                 break;
+
+            case "api/test2":
+                console/log("rest api called");              
+                response.writeHead(200,{
+               "Content-Type": "application/json",
+              });
+              response.write(JSON.stringify({ foo: "bar"}));
+              response.end();
+              break;
+                
 
           default:
               response.writeHead(404,{
