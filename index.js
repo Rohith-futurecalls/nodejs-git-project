@@ -17,10 +17,18 @@ http
                   "Content-Type": "text/html",
 
               });
-              console.log("API");
               response.write("<h2>About Page!</h2>");
               response.end();
               break;
+
+            case "api/test":
+                response.writeHead(200,{
+                 "Content-Type": "application/json",
+                });
+                response.write(JSON.stringify({ foo: "bar"}));
+                response.end();
+                break;
+                
           default:
               response.writeHead(404,{
                   "Content-Type": "text/html",
